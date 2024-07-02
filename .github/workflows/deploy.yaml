@@ -13,7 +13,7 @@ jobs:
       - run: docker build -t drifter2024/react-test -f ./client/Dockerfile.dev ./client
       - run: docker run -e CI=true drifter2024/react-test npm test
       #build images
-      - run: docker build -t drifter2024/multi-client ./client
+#      - run: docker build -t drifter2024/multi-client ./client
       - run: docker build -t drifter2024/multi-nginx ./nginx
       - run: docker build -t drifter2024/multi-server ./server
       - run: docker build -t drifter2024/multi-worker ./worker
